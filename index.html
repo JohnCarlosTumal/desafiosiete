@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de boostrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
@@ -18,46 +24,62 @@
         <div class="divUno">
             <h1>Cabañas Rio</h1>
         </div>
-        
+
         <div class="divDos">
             <h2 class="experiencia"> ¡¡Una experiencia diferente ! !</h2>
         </div>
 
-        <nav class="menu">
-            <ul>
-                <li> 
-                    <img class="icono" src="img/casa.png" alt="">
-                    <a href="pages/hospedaje.html">Hospedaje</a>
-                </li>
-                <li>
-                    <img class="icono" src="img/comida-y-restaurante.png" alt="">
-                    <a href="pages/gastronomia.html">Gastronomia</a>
-                    </li>
-                <li>
-                    <img class="icono" src="img/kayac.png" alt="">
-                    <a href="pages/actividades.html">Actividades</a>
-                </li>
-                <li>
-                    <img class="icono" src="img/marcador-de-posicion.png" alt="">
-                    <a href="pages/ubicacion.html">Ubicacion</a>
-                </li>
-            </ul>
-        </nav>
+        
+
+            
+                <nav class="navbar navbar-expand-lg nuevoMain">
+                    <div class="container-fluid">
+                
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="pages/hospedaje.html" class="link-ligth">Hospedaje</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="pages/gastronomia.html">Gastronomia</a>
+                                </li>                            
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="pages/actividades.html">Actividades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="pages/ubicacion.html">Ubicacion</a>
+                                </li>
+                
+                            </ul>
+                
+                        </div>
+                    </div>
+                </nav>
+            
+        
+
     </header>
+
+
 
     <main class="centralIndex">
 
         <div class="informacion">
-            <h2>Quienes Somos</h2>           
+            <h2>Quienes Somos</h2>
 
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum asperiores repellendus, maxime
                 dolorem
                 fugiat magnam ex doloremque, quis temporibus voluptatibus nisi dolores facilis eaque voluptatem saepe
                 recusandae reiciendis officia.
-               
+
             </p>
-            
+
         </div>
 
         <div class="galeria">
@@ -68,11 +90,12 @@
             <div class="imagen2">
                 <img src="img/pexels-syed-rifat-hossain-6159993.jpg" alt="">
             </div>
-            
+
             <div class="imagen3">
-                <img src="img/silhouette-of-group-people-have-fun-at-the-top-of-the-mountain-near-the-tent-during-the-sunset.jpg" alt="">
+                <img src="img/silhouette-of-group-people-have-fun-at-the-top-of-the-mountain-near-the-tent-during-the-sunset.jpg"
+                    alt="">
             </div>
-            
+
             <div class="imagen4">
                 <img src="img/pexels-maximilian-wegele-5214465.jpg" alt="">
             </div>
@@ -84,18 +107,24 @@
             <div class="imagen6">
                 <img src="img/pexels-roberto-zuniga-5306881.jpg" alt="">
             </div>
-            
+
             <div class="imagen7">
                 <img src="img/pexels-quang-nguyen-vinh-6346810.jpg" alt="">
-            </div>   
-                                    
-        </div>     
-        
+            </div>
+
+        </div>
+
     </main>
 
     <footer class="piePagina">
         <h3 class="final">&copy; 2022 John Tumal</h3>
     </footer>
+
+    <!-- link javascrip -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 
 

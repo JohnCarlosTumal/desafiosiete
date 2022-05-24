@@ -99,6 +99,18 @@
 } */
 
 
+.nuevoMain{
+    background-image: linear-gradient(green, black);
+    color: aliceblue;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.nuevoMainDos{
+    color: aliceblue;
+}
+
+
 
 .menu ul {
     width: 100%;
@@ -460,10 +472,10 @@ nav ul li:hover {
     border: 10px inset rgb(109, 150, 63);
 }
 
-.imgUno img {
+/* .imgUno img {
     width: 100%;
     height: 100%;
-}
+} */
 
 
 
