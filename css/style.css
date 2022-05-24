@@ -1,0 +1,964 @@
+/*importacion fuente */
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&family=Shadows+Into+Light&family=Tapestry&display=swap');
+
+/*reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*diseño encabezado*/
+
+.imagenFondo {
+    background-image: url(../img/paisaje.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.divUno {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+    animation-name: cab;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes cab{
+
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+
+
+
+.divDos {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 15px;
+    color: aliceblue;
+    font-family: 'Shadows Into Light', cursive;
+
+
+}
+
+.experiencia {
+    animation-name: exp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exp {
+    0% {
+        transform: rotateX(360DEG);
+        font-weight:lighter;
+    }
+
+
+    
+    100% {
+        transform: rotateX(0deg);
+        font-size: 30px;
+        font-weight: bold;
+        
+
+    }
+
+
+}
+
+/* .divDos h2{
+    transform: rotate(360deg);
+    transition: 1.5s;
+    font-size: 30px;
+} */
+
+
+
+.menu ul {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 236, 236);
+    background-image: linear-gradient(rgb(109, 150, 63), rgb(0, 0, 0));
+    opacity: 1;
+    padding: 10px;
+
+
+}
+
+/* -----diseño menu----------*/
+
+.icono {
+    width: 15px;
+    height: 15px;
+
+}
+
+nav ul li a {
+    color: rgb(226, 226, 226);
+    margin: 15px;
+    text-decoration: none;
+    font-family: 'Tapestry', cursive;
+    font-size: 13px;
+
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: underline;
+    margin: 1px;
+
+
+}
+
+.menu ul li a:hover {
+    color: rgb(248, 248, 248);
+    font-size: 14px;
+
+}
+
+nav ul li:hover {
+    text-decoration: none;
+}
+
+
+/*------------ diseño main---------------*/
+
+.centralIndex {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+
+.informacion {
+    background-color: rgb(0, 0, 0);
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+
+}
+
+.informacion p {
+    text-align: center;
+    font-size: 14px;
+
+}
+
+
+.galeria {
+    display: grid;
+    padding: 80px;
+    background-color: rgb(0, 0, 0);
+
+
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 0.8fr 0.1fr 0.3fr;
+    grid-template-areas: "imagen1 imagen1 imagen2"
+        "imagen4 imagen3 imagen5"
+        "imagen4 imagen6 imagen6"
+        "imagen4 imagen7 imagen7";
+
+    gap: 10px;
+
+
+
+}
+
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen2 {
+    grid-area: imagen2;
+}
+
+.imagen2 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen3 {
+    grid-area: imagen3;
+}
+
+.imagen3 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen4 {
+    grid-area: imagen4;
+}
+
+.imagen4 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen5 {
+    grid-area: imagen5;
+}
+
+.imagen5 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen6 {
+    grid-area: imagen6;
+}
+
+.imagen6 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagen7 {
+    grid-area: imagen7;
+}
+
+.imagen7 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* diseño footer*/
+
+.piePagina {
+    background-image: linear-gradient(black, rgb(109, 150, 63));
+    color: white;
+    font-size: 10PX;
+    text-align: center;
+    height: 100px;
+
+
+
+}
+
+.final {
+    position: relative;
+    top: 40px;
+
+}
+
+/*--------------------media Query---------------------*/
+
+@media screen and (min-width:620px) {
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .icono {
+        width: 23px;
+        height: 21px;
+    }
+
+    .informacion {
+        height: 20vh;
+        font-size: 21px;
+    }
+
+    .informacion p {
+        font-size: 21px;
+    }
+
+    .menu ul li a:hover {
+        color: rgb(248, 248, 248);
+        font-size: 25px;
+
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+    nav ul li a {
+        font-size: 30px;
+    }
+
+    .icono {
+        width: 23px;
+        height: 21px;
+    }
+
+    .informacion {
+        height: 20vh;
+        font-size: 23px;
+    }
+
+    .informacion p {
+        font-size: 23px;
+    }
+
+    .menu ul li a:hover {
+        color: rgb(248, 248, 248);
+        font-size: 32px;
+
+    }
+
+}
+
+/* ------------------------------HOSPEDAJE-------------------------------------------------- */
+
+
+.hotel {
+    background-image: url(../img/long-range-shot-of-valley-with-hut-house-and-tall-snowy-mountains.jpg);
+    background-position: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.hospedaje {
+    height: 100vh;
+    width: 100vw;
+    color: azure;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* .hospedaje h1{
+    transform:scaleZ(2);
+    transition: 1s;
+    
+} */
+
+.hosp{
+    animation-name: hospedag;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+
+}
+
+
+
+@keyframes hospedag{
+
+    from{
+        transform:scale(.5);
+        
+    }
+
+    to{
+        transform: scale(1);
+        
+    }
+
+
+}
+
+.reservaN {
+    height: 60px;
+    background-color: black;
+    color: rgb(255, 250, 250);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: x-large;
+
+}
+
+.centralUno {
+
+    padding: 50px;
+    display: grid;
+    background-color: rgb(2, 2, 2);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 0.3fr);
+
+    grid-template-areas: "imgUno"
+        "descripcion1"
+        "imgDos"
+        "descripcion2"
+    ;
+    row-gap: 40px;
+
+}
+
+
+.descripcion1 {
+    grid-area: descripcion1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    gap: 10px;
+
+}
+
+.descripcion1 p {
+    text-align: center;
+}
+
+.precio1 {
+    border: 1px solid whitesmoke;
+}
+
+.imgUno {
+
+    grid-area: imgUno;
+    border: 10px inset rgb(109, 150, 63);
+}
+
+.imgUno img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.descripcion2 {
+    grid-area: descripcion2;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.precio2 {
+    border: 1px solid whitesmoke;
+}
+
+.descripcion2 p {
+    text-align: center;
+}
+
+.imgDos {
+
+    grid-area: imgDos;
+    border: 10px inset rgb(109, 150, 63);
+
+}
+
+.imgDos img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-------------------media query--------------------------*/
+
+@media screen and (min-width:620px) {
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    .icono {
+        width: 23px;
+        height: 21px;
+    }
+
+    .informacion {
+        height: 20vh;
+        font-size: 21px;
+    }
+
+    .informacion p {
+        font-size: 21px;
+    }
+
+    .reservaN {
+        font-size: 30px;
+    }
+
+    .centralUno {
+
+        grid-template-columns: 1.5fr 2fr;
+        grid-template-rows: repeat(2, 0.3fr);
+        grid-template-areas: "descripcion1 imgUno"
+            "descripcion2 imgDos"
+        ;
+
+        column-gap: 80px;
+        row-gap: 40px;
+
+    }
+
+    .descripcion1 h2 {
+        font-size: 23px;
+
+    }
+
+    .precio1 {
+        font-size: 15px;
+    }
+
+    .precio2 {
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+    nav ul li a {
+        font-size: 30px;
+    }
+
+    .icono {
+        width: 23px;
+        height: 21px;
+    }
+
+
+    .reservaN {
+        font-size: 40px;
+    }
+
+    .descripcion1 h2 {
+        font-size: 45px;
+
+    }
+
+    .descripcion1 p {
+        font-size: 20px;
+    }
+
+    .descripcion2 h2 {
+        font-size: 45px;
+
+    }
+
+    .descripcion2 p {
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+
+/* --------------------------------Gastronomia---------------------------------- */
+
+.gastronomia {
+    background-image: url(../img/gastronomia-colombiana-1.jpg);
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.divGastro {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: gastro;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+
+}
+
+
+
+
+
+@keyframes gastro{
+
+    from{
+        transform:scale(.5);
+        
+    }
+
+    to{
+        transform: scale(1);
+        
+    }
+}
+
+.centralCuatro {
+
+    height: 120vh;
+    padding: 50px;
+    background-color: rgb(5, 5, 5);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: repeat(4, 0.3fr);
+    grid-template-areas: "comida1"
+        "imgComida1"
+        "comida2"
+        "imgComida2";
+
+    row-gap: 20px;
+}
+
+
+
+.comida1 {
+    grid-area: comida1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.imgComida1 {
+
+    grid-area: imgComida1;
+    border: 5px solid rgb(131, 126, 126);
+
+}
+
+.imgComida1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.comida2 {
+    grid-area: comida2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+
+.imgComida2 {
+    grid-area: imgComida2;
+
+}
+
+.imgComida2 img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgb(163, 159, 154);
+    border-radius: 25px;
+}
+
+.comprar {
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+
+/*---------*************** MEDIA QUERY ************-------------*/
+
+@media screen and (min-width:620px) {
+
+    .centralCuatro {
+        height: 150vh;
+        grid-template-columns: 0.6fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "comida1 imgComida1"
+            "comida2 imgComida2";
+
+        gap: 20px;
+    }
+
+    .comida1 h2 {
+        font-size: 35px;
+    }
+
+    .comida2 h2 {
+        font-size: 35px;
+    }
+
+    .comida1 p {
+        font-size: 20px;
+    }
+
+    .comida2 p {
+        font-size: 20px;
+
+    }
+
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .centralCuatro {
+        height: 200vh;
+    }
+
+    .comida1 h2 {
+        font-size: 40px;
+    }
+
+    .comida2 h2 {
+        font-size: 40px;
+    }
+
+    .comida1 p {
+        font-size: 30px;
+    }
+
+    .comida2 p {
+        font-size: 30px;
+
+    }
+
+    .comprar {
+        font-size: 30px;
+    }
+
+
+
+}
+
+
+/* ----------------------------actividades-------------------------------------- */
+
+.actividades {
+    background-image: url(../img/pexels-teguh-sugi-6903948.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.acti {
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: activ;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes activ{
+    0%{
+        transform: scale(.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+.centralTres {
+
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "actiUno"
+        "imagenCuatro"
+        "actiDos"
+        "imagenSeis";
+
+    gap: 40px;
+
+
+
+}
+
+.actiUno {
+
+    grid-area: actiUno;
+    color: white;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.imagenCuatro {
+    grid-area: imagenCuatro;
+    background-color: blue;
+}
+
+.imagenCuatro img {
+    width: 100%;
+    height: 100%;
+}
+
+.actiDos {
+    background-color: blue;
+    grid-area: actiDos;
+    color: white;
+}
+
+.imagenSeis {
+    grid-area: imagenSeis;
+    background-color: blue;
+}
+
+.imagenSeis img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---------------------------------ubicacion---------------------------------------*/
+
+.ubicacion {
+    background-image: url(../img/pexels-nuno-obey-128303.jpg);
+    background-position: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ub {
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: ubic;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+
+
+}
+
+@keyframes ubic{
+    0%{
+        transform: rotateX(360deg);
+        font-size: 10px;
+    }
+
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+
+.central {
+    padding: 30px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    gap: 30px;
+}
+
+.imagenCinco img {
+    border: 10px double rgb(14, 58, 153);
+    border-radius: 40px;
+    width: 80%;
+    height: 100%;
+}
+
+
+/*------------********MEDIA QUERY*******-------*/
+
+@media screen and (min-width:620px) {
+
+    .imagenCinco img {
+        width: 90%;
+        height: 100%;
+    }
+
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .imagenCinco img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
