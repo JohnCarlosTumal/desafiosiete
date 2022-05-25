@@ -474,6 +474,7 @@ nav ul li:hover {
 }
 
 .imgUno {
+    
 
     grid-area: imgUno;
     border: 10px inset rgb(109, 150, 63);
@@ -552,6 +553,7 @@ nav ul li:hover {
 
         column-gap: 80px;
         row-gap: 40px;
+        
 
     }
 
@@ -570,6 +572,11 @@ nav ul li:hover {
 
     button {
         font-size: 15px;
+    }
+
+    .imgUno{
+        height: 100%;
+        width: 100%;
     }
 
 }
